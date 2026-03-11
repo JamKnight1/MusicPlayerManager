@@ -1,24 +1,22 @@
+import java.util.Scanner;
+
 public class MainActivity{
 
-    public static userMovie(){
+    public static void main(){
 
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("What is your favorite genre of movie?");
+        System.out.println("What is your favorite genre of movie? ");
         String favoriteGenre = scanner.nextLine();
 
         System.out.println("What is your favorite movie");
         String favoriteMovie = scanner.nextLine();
 
-        System.out.println("What is your favorite movie's genre?");
-        String favoriteMovieGenre = scanner.nextLine();
+        Recommendation.recommendMovie(favoriteGenre, favoriteMovie);
+
+        scanner.close();
+
     }
-
-    public static main()
-        userMovie();
-        recommendMovie();
-
-
 
 }
